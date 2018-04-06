@@ -2,7 +2,7 @@
 ##SEEDBOX## : Application : install shell + aides
 
 
-bash <(curl -Ss https://raw.githubusercontent.com/nahalke/script/blob/master/installshell)
+bash <(curl -Ss https://raw.githubusercontent.com/nahalke/script/blob/master/installshell.sh)
 
 
 #To install Plex via SSH :
