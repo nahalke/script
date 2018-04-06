@@ -1,23 +1,23 @@
 #!/bin/bash
 
 ##Check if system compatible before install
-compatible(){
+#compatible(){
 	##Check if distribution is supported
 	#if [[ -z "$(uname -a | grep Ubuntu)" && -z "$(uname -a | grep Debian)" ]];then
 		#echo Distro not supported
 		#exit 1
 	
 	##Check if systemd is running
-	if [[ -z "$(pidof systemd)" ]]; then
-		echo systemd not running
-		exit 2
-	fi
+	#if [[ -z "$(pidof systemd)" ]]; then
+		#echo systemd not running
+		#exit 2
+	#fi
 
-	if [ "$UID" -ne 0 ]; then
-		echo Must be root to run the script
-		exit 3
-	fi
-}
+	#if [ "$UID" -ne 0 ]; then
+		#echo Must be root to run the script
+		#exit 3
+	#fi
+#}
 
 ##Ask user to install the app
 installApp(){
