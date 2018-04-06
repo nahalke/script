@@ -3,10 +3,10 @@
 ##Check if system compatible before install
 compatible(){
 	##Check if distribution is supported
-	if [[ -z "$(uname -a | grep Ubuntu)" && -z "$(uname -a | grep Debian)" ]];then
-		echo Distro not supported
-		exit 1
-	fi
+	#if [[ -z "$(uname -a | grep Ubuntu)" && -z "$(uname -a | grep Debian)" ]];then
+		#echo Distro not supported
+		#exit 1
+	
 	##Check if systemd is running
 	if [[ -z "$(pidof systemd)" ]]; then
 		echo systemd not running
